@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(247, 215, 215);
+        }
+        .details{
+            font-size: 20px;
+        }
+        #s1 p {
+           color: brown;
+           border: 4px dotted black;
+           margin-left: 100px;
+           margin-right: 100px;
+           padding: 30px;
+        }
+        #s2 p {
+            color: blueviolet;
+           border: 4px dotted black;
+           margin-left: 100px;
+           margin-right: 100px;
+           padding: 30px;
+        }
+        #s3 p {
+            color: rgb(23, 141, 8);
+           border: 4px dotted black;
+           margin-left: 100px;
+           margin-right: 100px;
+           padding: 30px;
+        }
+    </style>
+</header>
+<body>
+    <center>
+        <h1>CSS STYLING</h1><br>
+        <details class="details">
+            <summary>Types</summary>
+            <section id="s1">
+            <h2>Inline styling</h2>
+            <p><b>Inline</b> - by using the style attribute inside HTML elements.<br>
+                An inline CSS is used to apply a unique style to a single HTML element.<br>
+                An inline CSS uses the style attribute of an HTML element.<br>
+                The following example sets the text color of the &lt;h1> element to blue, and the text color of the &lt;p> element to red:<br>
+            <b>&lt;h1 style="color:blue">hello&lt;/h1><br> &lt;p style="color:red">How Are You?&lt;/p></b></p>
+            </section>
+              
+            <section id="s2">
+            <h2>Internal styling</h2>
+            <p><b>Internal</b> - by using a &lt;style> element in the &lt;head> section.<br>
+                An internal CSS is used to define a style for a single HTML page.<br>
+                An internal CSS is defined in the &lt;head> section of an HTML page, within a &lt;style> element.<br>
+                An internal CSS is defined in the &lt;head> section of an HTML page, within a &lt;style> element.<br>
+                The following example sets the text color of ALL the &lt;h1> elements (on that page) to blue, and the text color of ALL the &lt;p> elements to red.<br>
+            <b>&lt;header><br>
+                &emsp;&lt;style><br>
+                        &emsp;&emsp;&emsp;h1{<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; color:blue;<br>
+                            &emsp;&emsp;&emsp;} <br>
+                            &emsp;&emsp;&emsp;p{<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;color:red;<br>
+                            &emsp;&emsp;&emsp;}<br>
+                &emsp;&lt;/style><br>
+               &lt;/header></b></p>
+            </section>
+            
+            <section id="s3">
+            <h2>External styling</h2>
+            <p><b>External</b> - by using a &lt;link> element to link to an external CSS file.<br>
+                An external style sheet is used to define the style for many HTML pages.<br>
+                To use an external style sheet, add a link to it in the &lt;head> section of each HTML page:<br>
+            <b>&lt;header><br>
+                &lt;link rel="stylesheet" href="styles.css"><br>
+              &lt;/header></b></p>
+            </section>
+        </details>
+    </center>
+</body>
+</html>
